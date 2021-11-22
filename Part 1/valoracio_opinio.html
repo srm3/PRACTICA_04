@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="SRM">
+  <meta name="copyright" content="SRM">
+  <title>Valoracio</title>
+  <link rel="stylesheet" href="./estils/style.css">
+</head>
+<header>
+
+</header>
+
+<body marginwidth="8%">
+  <div class="dropDown">
+    <nav>
+      <h2>Drop Down Menu</h2>
+       <input id="toggle" type="checkbox" checked>
+    <ul>
+      <li><a href="./index.html">Fast & Furious</a></li>
+      <li><a href="./media.html">Media</a></li>
+      <li><a href="./valoracio_opinio.html">Valoracio i opinio</a></li>
+      <li><a href="./altres.html">Altres</a></li>
+    </ul>
+  </nav>
+  </div>
+  
+  <section id="tabla">
+
+    <h1>On veure la pelicula?:</h1>
+    <table width="60%" border="1" cellspacing="0" cellpadding="0">
+      <tr>
+        <td rowspan="3">
+          <p>CINEMAS</p>
+        </td>
+        <td>
+          <p></p>
+        </td>
+        <td>
+          <p>PREU</p>
+        </td>
+        <td>
+          <p>VALORACIO</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Ocine</p>
+        </td>
+        <td>
+          <p>8.75</p>
+        </td>
+        <td>
+          <p>4.6</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Cinesa</p>
+        </td>
+        <td>
+          <p>7.65</p>
+        </td>
+        <td>
+          <p>4.7</p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="3">
+          <p>STREAMING</p>
+        </td>
+        <td>
+          <p>Amazon prime</p>
+        </td>
+        <td>
+          <p>5.95</p>
+        </td>
+        <td>
+          <p>4.4</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Netflix</p>
+        </td>
+        <td>
+          <p>10.67</p>
+        </td>
+        <td>
+          <p>4.8</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>HBO</p>
+        </td>
+        <td>
+          <p>6.56</p>
+        </td>
+        <td>
+          <p>4.9</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <header>
+      <h1>Opinio:</h1>
+    </header>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Dades de l'usuari</legend>
+        <div>
+          <label for="nom">Nom* </label>
+          <input type="text" name="nom" id="nom" autofocus required placeholder="Nom" pattern="[A-Za-z ]{1,32}">
+        </div>
+        <div>
+          <label for="cognoms">Cognoms* </label>
+          <input type="text" name="cognoms" id="cognoms" required placeholder="cognoms" pattern="[A-Za-z ]{1,32}">
+        </div>
+        <div>
+          <label for="datanaxament">Data de naixement</label>
+          <input type="date" name="datanaixement" id="datanaixement">
+        </div>
+        <div>
+          <label for="Home">Sexe</label>
+          <input type="radio" id="Home" name="sexe" value="Home">
+          <label for="Home">Home</label>
+          <input type="radio" id="Dona" name="sexe" value="Dona">
+          <label for="Dona">Dona</label>
+          <input type="radio" id="altre" name="sexe" value="Altres">
+          <label for="Altres">Altres</label>
+        </div>
+        <div>
+          <label for="mail">E-mail</label>
+          <input type="email" id="email" placeholder="exemple@gmail.com"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+        </div>
+        <div>
+          <label for="opinio">Opinio</label>
+          <textarea name="text" rows="4" cols="40" requiered placeholder="Escriu aqui la teva opinio..."></textarea>
+        </div>
+      </fieldset>
+  </section>
+  <footer>
+    <div>
+      <input type="image" name="enviar" src="send.png" alt="Enviar" height="5%" width="5%">
+    </div>
+    <div>
+      <button type="reset">Esborrar</button>
+    </div>
+  </footer>
+  </form>
+</body>
+
+</html>

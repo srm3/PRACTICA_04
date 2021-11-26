@@ -1,20 +1,28 @@
 
-
 body {
-  background: #ece5da;
   font-family: sans-serif;
+  background: rgb(242,208,223);
+ background: radial-gradient(circle, rgba(242,208,223,1) 0%, rgba(200,218,238,1) 100%);
 }
 
+/* TITOLS */
 h1 {
   background-color: aqua;
   opacity: 0.8;
+  text-shadow: 0 0 3px #FF0000;
 }
+
+h2 {
+text-transform: uppercase;
+}
+
 /* MENU DESPLEGABLE */
+
 .dropDown > nav {
   margin: auto;
   margin-top: 40px;
   position: relative;
-  width: 50vw;
+  width: 15vw;
   min-width: 320px;
   height: 200px;
 }
@@ -33,6 +41,12 @@ h1 {
   align-items: center;
   box-shadow: 4px 4px 20px -2px rgba(0,0,0,.35);
   transition: all .4s;
+}
+
+.logo {
+max-width: 10%;
+position: absolute;
+left: 10px;
 }
 
 .dropDown >nav > input {
@@ -61,6 +75,9 @@ h1 {
   text-align: center;
   transition: all .4s ease-out;
   height: 100%;
+}
+.dropDown > nav ul li > a:hover{
+  background-color: rgb(223, 78, 53);
 }
 
 .dropDown > nav ul li {
@@ -112,3 +129,41 @@ h1 {
   width: 100%;
   border-radius: 50px;
 }
+
+/* MEDIA */
+
+  .media {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+  }
+  .media img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+  }
+
+  /* TAULA */
+
+  .taula{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(183, 219, 230);
+    border-radius: 3px;
+    padding: 1em;
+
+  }
+  
+  /* FORMULARI */
+
+  .formulari{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(183, 219, 230);
+    border-radius: 3px;
+    padding: 1em;
+
+  }
